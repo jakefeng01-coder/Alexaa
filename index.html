@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Will you be my Valentine? 💗</title>
+
+  <!-- Premium font (works on GitHub Pages) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="bg">
+    <canvas id="bokeh"></canvas>
+    <canvas id="petals"></canvas>
+    <div class="grain"></div>
+    <div class="vignette"></div>
+  </div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="spark">✦</span>
+      <span class="brand-text">a little pink moment</span>
+    </div>
+
+    <button id="musicBtn" class="pill" aria-label="Toggle music">
+      <span id="musicIcon">♪</span>
+      <span id="musicText">music: off</span>
+    </button>
+  </header>
+
+  <main class="wrap">
+    <section class="stage">
+      <div class="halo"></div>
+
+      <div id="card" class="card" role="region" aria-live="polite">
+        <div class="card-shine"></div>
+        <div class="card-border"></div>
+
+        <div class="meta">
+          <div class="chip">💌 Valentine Invitation</div>
+          <div class="date" id="today"></div>
+        </div>
+
+        <h1 class="title">
+          Will you be my
+          <span class="accent">Valentine</span>?
+        </h1>
+
+        <p class="subtitle">
+          Baby pink energy only. I’ll bring the flowers, you bring the smile.
+        </p>
+
+        <div class="divider">
+          <span></span><em>♡</em><span></span>
+        </div>
+
+        <div class="buttons">
+          <button id="yes" class="btn btn-yes">Yes, obviously 💗</button>
+          <button id="no" class="btn btn-no">No (be serious) 🙈</button>
+        </div>
+
+        <div id="result" class="result hidden">
+          <div class="result-inner">
+            <div class="big">Perfect. It’s a date. 💞</div>
+            <div class="small">You just made my heart do a little happy dance.</div>
+            <div class="row">
+              <div class="mini">📸 Screenshot this and send it to me</div>
+              <button id="again" class="pill smallpill">play sparkle again ✨</button>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <span class="dot"></span>
+          made with soft pink intentions
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <!-- super light ambient loop (optional) -->
+  <audio id="music" loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/10/26/audio_7b2c1f5f4d.mp3?filename=chill-ambient-12551.mp3" type="audio/mpeg">
+  </audio>
+
+  <canvas id="sparkles"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
